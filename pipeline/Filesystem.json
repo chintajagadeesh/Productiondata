@@ -21,7 +21,6 @@
 						"storeSettings": {
 							"type": "FileServerReadSettings",
 							"recursive": true,
-							"wildcardFileName": "*.csv",
 							"deleteFilesAfterCompletion": false
 						},
 						"formatSettings": {
@@ -47,7 +46,7 @@
 						"referenceName": "CoppyCsvFiles",
 						"type": "DatasetReference",
 						"parameters": {
-							"NewFolder": "CSV"
+							"NewFolder": "ALLFILES"
 						}
 					}
 				]
