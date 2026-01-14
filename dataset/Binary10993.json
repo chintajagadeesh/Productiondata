@@ -1,12 +1,15 @@
 {
-	"name": "CoppyFromLocalSystem",
+	"name": "Binary10993",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "FileServer1",
+			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"Name": {
+			"Folder": {
+				"type": "string"
+			},
+			"file": {
 				"type": "string"
 			}
 		},
@@ -14,11 +17,8 @@
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
-				"type": "FileServerLocation",
-				"fileName": {
-					"value": "@dataset().Name",
-					"type": "Expression"
-				}
+				"type": "AzureBlobStorageLocation",
+				"container": "allfiles"
 			}
 		}
 	}

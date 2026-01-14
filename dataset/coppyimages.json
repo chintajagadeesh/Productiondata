@@ -1,24 +1,15 @@
 {
-	"name": "CoppyFromLocalSystem",
+	"name": "coppyimages",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "FileServer1",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"Name": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
-				"type": "FileServerLocation",
-				"fileName": {
-					"value": "@dataset().Name",
-					"type": "Expression"
-				}
+				"type": "FileServerLocation"
 			}
 		}
 	}
