@@ -1,0 +1,25 @@
+{
+	"name": "Trigerimages",
+	"properties": {
+		"description": "trigert images from onprime to online ",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Coppy Data From On Prime To Online",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 5,
+				"startTime": "2026-01-20T08:31:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
